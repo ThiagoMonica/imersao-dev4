@@ -1,0 +1,35 @@
+<html>
+
+<head>
+	<title>
+		Imersão Dev - Aula 03
+	</title>
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen">
+  	<script src="script.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="page-title">
+			Mentalista
+		</h1>
+		<img src="../imgs/logo-imersao-mentalista.svg" class="page-logo" alt=""><br>
+		<p class="page-subtitle">
+			Descubra qual o número que estou pensando. Você tem 3 tentativas!
+		</p>
+		<div class="label-container">
+			<label for="chute">Digite um número de 0 a 10</label>
+			<br>
+			<input type="number" id="valor" class="input-chute" size="2" />
+			<div class="line"></div><br>
+		</div>
+		<button type="submit" class="submit-button" onclick="Chutar()">Converter</button>
+		<h2 class="resultado" id="resultado"></h2>
+		<h2 class="resultado" id="tentativas"></h2>
+	</div>
+	<a href="https://alura.com.br/" target="_blank">
+		<img src="../imgs/alura-logo.svg" alt="" class="alura-logo">
+	</a>
+</body>
+
+</html>
