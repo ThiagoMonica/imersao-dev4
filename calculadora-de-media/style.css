@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto Mono", monospace;
   min-height: 400px;
-  background-image: url("imgs\background-basket.jpg");
+  background-image: url("../imgs/background-basket.jpg");
   background-color: #000000;
   background-size: cover;
   background-position: center bottom;
@@ -45,7 +45,7 @@ body {
   -moz-transition: all 0.2s;
   transition: all 0.2s;
   position: relative;
-  margin-top: 16vw;
+  margin-top: 10vw;
   width: 20vw;
   height: 3vw;
 }
