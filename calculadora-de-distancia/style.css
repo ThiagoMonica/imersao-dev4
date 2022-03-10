@@ -1,12 +1,11 @@
 body {
   font-family: "Roboto Mono", monospace;
   min-height: 400px;
-  background-image: url("imgs\space.webp");
+  background-image: url("../imgs/space.webp");
   background-color: #000000;
-  background-size: 100vh;
   background-position: center bottom;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: auto;
 }
 
 .container {
@@ -45,27 +44,6 @@ input {
 label {
   color: white;
 }
-/*
-.submit-button {
-  background: blue;
-  border: 1px solid blue;
-  color: #fff;
-  padding: 0 30px;
-  cursor: pointer;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-  position: relative;
-  margin-top: 6vw;
-  width: 20vw;
-  height: 3vw;
-}
-
-.submit-button:hover {
-  background: #d73851;
-  border: 1px solid #d73851;
-}
-*/
 
 h2 {
   color: #ffffff;
@@ -80,7 +58,6 @@ h2 {
   pointer-events: auto;
   opacity: 1;
   transition: opacity 0.18s 0.48s;
-  height: 100%;
   background: transparent;
   border: none;
   outline: none;
@@ -89,6 +66,7 @@ h2 {
   text-align: center;
   color: white;
   margin-bottom: 0;
+  padding-top: 5%;
 }
 
 input::-webkit-outer-spin-button,
