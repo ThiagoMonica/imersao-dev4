@@ -1,0 +1,70 @@
+body {
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  background-image: url("../imgs/spiderman-jordan.jpg");
+  background-color: #000000;
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+}
+
+.page-title {
+  color: #ffffff;
+  margin: 0 0 15px;
+  font-family: "Graffiti font", sans-serif;
+  text-shadow: 6px 2px black;
+}
+
+.page-subtitle {
+  width: 500px;
+  position: absolute;
+  background-color: black;
+  padding: 0.1em 2em 1.3em 2em;
+  left: 50%;
+  top: 18%;
+  height: 0px;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.page-logo {
+  width: 200px;
+  background-color: black;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+body > img {
+  margin: 0 10px;
+}
+
+img {
+  max-height: 250px;
+}
+
+.vitrine {
+  height: 678px;
+  padding-right: 16%;
+  padding-left: 12%;
+  margin-top: 30px;
+}
+
+.snkr-img {
+  margin: 21px;
+  box-shadow: 0 10px 16px 0 rgb(0 0 0 / 70%), 0 6px 20px 0 rgb(0 0 0 / 52%);
+  border: 1px solid #021a40;
+}
+
+.snkr-img:hover {
+  border: 3px solid red;
+}
