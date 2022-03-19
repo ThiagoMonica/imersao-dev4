@@ -25,13 +25,53 @@ var listaSnkrs = [
   }
 ];
 
-document.write("<div class='vitrine'>");
-for (var i = 0; i < listaSnkrs.length; i++) {
-  console.log(listaSnkrs[i].storeUrl);
-  document.write("<a href='" + listaSnkrs[i].storeUrl + "' target='_blank'>");
-  document.write("<img src='" + listaSnkrs[i].imgUrl + "' class='snkr-img'>");
-  document.write("</a>");
+function mostraSnkrInput(){
+  var elementoVitrine = document.getElementById("vitrine");
+  var index = (listaSnkrs.length) - 1;
+
+  var elementoStoreUrl = "<a href='" + listaSnkrs[index].storeUrl + "' target='_blank'>";
+  var elementoImgUrl = "<img src='" + listaSnkrs[index].imgUrl + "' class='snkr-img'>";
+
+  elementoVitrine.innerHTML = elementoVitrine.innerHTML + elementoStoreUrl + elementoImgUrl;
+  
 }
-document.write("</div>");
-document.write("</body>");
-document.write("</html>");
+
+function mostraSnkrFirst(){
+  var elementoVitrine = document.getElementById("vitrine");
+
+  for (var i = 0; i < listaSnkrs.length; i++) {
+    var elementoStoreUrl = "<a href='" + listaSnkrs[i].storeUrl + "' target='_blank'>";
+    var elementoImgUrl = "<img src='" + listaSnkrs[i].imgUrl + "' class='snkr-img'>";
+
+    elementoVitrine.innerHTML = elementoVitrine.innerHTML + elementoStoreUrl + elementoImgUrl;
+  }
+}
+
+mostraSnkrFirst();
+
+
+function adicionarSnkr(){
+  var imgUrl = document.getElementById("imgUrl").value;
+  var buyUrl = document.getElementById("buyUrl").value;
+  var dict = {"imgUrl":imgUrl, "storeUrl":buyUrl}
+
+  if(validateInput(imgUrl, buyUrl)){
+    listaSnkrs.push(dict);
+    mostraSnkrInput();
+  }else{
+    console.error("Oops! Algo deu errado.");
+  }
+  
+}
+
+function validateInput(imgUrl, buyUrl){
+  if(imgUrl == null || imgUrl == "", buyUrl == null || buyUrl == ""){
+    alert("Campos não podem estar em branco");
+  } else if(!imgUrl.endsWith(".jpg")){
+    alert("A imagem tem que estar no formato jpg");
+  } else{
+    return true;
+  }
+
+  return false;
+}
